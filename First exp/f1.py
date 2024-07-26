@@ -1,12 +1,10 @@
 import pandas as pd
 import numpy as np
 import statistics
-
-# Sample data (replace with your actual data)
 data = pd.Series([2, 4, 5, 8, 10, 12, 15, 22, 25])
 print("data = 2, 4, 5, 8, 10, 12, 15, 22, 25")
 
-# 1. Mean (Arithmetic Mean)
+# 1. Mean
 mean_value = np.mean(data)
 print(f"Mean: {mean_value}")
 
@@ -51,5 +49,5 @@ percentile_75 = np.percentile(data, 75)
 print(f"75th Percentile: {percentile_75}")
 
 # 12. Skewness
-skewness_value = data.skew()  # Use Pandas' skew() for Series
+skewness_value = data.skew() 
 print(f"Skewness: {skewness_value}")
